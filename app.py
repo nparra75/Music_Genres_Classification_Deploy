@@ -10,7 +10,7 @@ import pickle
 def load_resources():
     model1 = load_model('music_genre_model1.keras')
     model2 = load_model('music_genre_model2.keras')
-    model3 = load_model('music_genre_model_with_mfcc.keras')  # Modelo MFCC
+    model3 = load_model('music_genre_model_with_mfcc.keras')  # Model MFCC
     with open('scaler.pkl', 'rb') as file:
         scaler = pickle.load(file)
     with open('scaler_new.pkl', 'rb') as file:
